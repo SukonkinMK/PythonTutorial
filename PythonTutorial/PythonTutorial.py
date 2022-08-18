@@ -40,3 +40,15 @@ def task3():
     dist = ((x1- x2) * (x1- x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2)) ** 0.5
     print(f'Расстояние между точками ({x1},{y1},{z1}) и ({x2},{y2},{z2}) равно {dist}')
     return 
+
+while True:
+    print('======================================')
+    task = int(input('Введите номер задачи (от 1 до 3), для выхода введите 0: '))
+    if task  == 0:
+        break
+    elif task == 1:
+        task1()
+    elif task == 2:
+        task2()
+    elif task == 3:
+        task3()
