@@ -29,3 +29,14 @@ def task2():
     elif a == 4:
         print('Допустимые значения: x > 0 и y < 0')
     return
+
+def task3():
+    x1 = int(input('Введите Х1: '))
+    y1 = int(input('Введите Y1: '))
+    z1 = int(input('Введите Z1: '))
+    x2 = int(input('Введите Х2: '))
+    y2 = int(input('Введите Y2: '))
+    z2 = int(input('Введите Z2: '))
+    dist = ((x1- x2) * (x1- x2) + (y1 - y2) * (y1 - y2) + (z1 - z2) * (z1 - z2)) ** 0.5
+    print(f'Расстояние между точками ({x1},{y1},{z1}) и ({x2},{y2},{z2}) равно {dist}')
+    return 
